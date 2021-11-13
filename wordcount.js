@@ -1,4 +1,4 @@
- // Print to console the first three most common words that appear in a given text
+//Print to console the first three most common words that appear in a given text
 // This script will run when the page is loaded
 window.onload = () => {
   let result = countWords();
@@ -11,8 +11,8 @@ function countWords() {
     "Some of the biggest and most expensive transportation projects in the world have involved building bridges. Bridges are crucial links that carry cars, trucks and trains across bodies of water, mountain gorges or other roads. As a result, they are one of the most important aspects of civil engineering and are subject to intense scrutiny, especially when they collapse. Bridge collapses can be tragic events, leading to loss of life and serious property damage. That is why bridge engineers, designers and builders must always take their jobs very seriously. The best way for them to prevent these accidents is to understand why bridges collapse in the first place. Understanding bridge collapses can lead to major changes in the design, construction and safety of future building projects. The following are main reasons why bridges fall.";
 
   // TODO: add code here to remove the periods and commas and transform all words to lowercase letters
-text=text.replace("/[,.]/g,");
-text=text.toLowerCase();
+   text=text.replace("/[,.]/g");
+   text=text.toLowerCase();
   // The wordArray array will contains a key value pair for words and their occurences in the text
   const wordArray = text.split(" ");
 
